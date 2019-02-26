@@ -5,7 +5,44 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1>Welcome to RideShare API!</h1>
+    <p>Github repo: https://github.com/pabloegpf1/carshareAPI</p>
+    <p>Some of the URL are: (I'm too lazy to add all of them)</p>
+    <h2>GET REQUESTS</h2>
+    <h3>User List</h3>
+    <p>/users</p>
+    <h3>Drivers List</h3>
+    <p>/drivers</p>
+    <h3>Rides List</h3>
+    <p>/rides</p>
+    <h2>POST REQUESTS</h2>
+    <h3>Insert User</h3>
+    <p>/user</p>
+    <p>[{
+        "name": "Pablo",
+        "password": "123",
+        "username": "pabloegpf1",
+        "email": "example@example.com"
+    }]</p>
+    <h3>Insert Ride</h3>
+    <p>/ride</p>
+    <p>[{
+        "driver_id": 1,
+        "time": "2019-01-08 04:05:06",
+        "location_from": 2,
+        "location_to": 1,
+        "cost": 2.5,
+        "max_riders": 3
+    }]</p>
+    <h3>Insert Driver</h3>
+    <p>/driver</p>
+    <p>[{
+        "id": 4,
+        "license": 123456,
+        "plate": 123456,
+        "car_color": "black",
+        "car_model": "Tesla model S"
+    }]</p>
+
   </body>
 </html>
